@@ -1,0 +1,240 @@
+.react-calendar {
+    height: 100%;
+    width: 100% !important;
+    padding-bottom: 24px;
+    border-radius: 36px;
+}
+
+.react-calendar__month-view__weekdays {
+    border: 1px solid #707070;
+    border-radius: 27px;
+    padding: 16px 0;
+    margin: 0 10px;
+    justify-content: space-between;
+}
+
+.react-calendar__month-view__days {
+    row-gap: 22px;
+    padding-top: 22px;
+    padding-left: 81px;
+    padding-right: 81px;
+    justify-content: space-between;
+}
+
+.react-calendar__navigation {
+    border-bottom: 1px solid #707070;
+    height: unset !important;
+    padding-top: 33px;
+    padding-bottom: 15px;
+}
+
+.react-calendar__tile.react-calendar__month-view__days__day,
+.react-calendar__tile {
+    height: 143px;
+    max-width: calc(14.28% - 20px);
+    border: 1px solid #707070 !important;
+    font-size: 67px;
+    line-height: 65px;
+    font-weight: 700 !important;
+    color: #A64AC9;
+    transition: all .3s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+
+.react-calendar__year-view__months .react-calendar__tile {
+    font-size: 35px;
+    line-height: 40px;
+    max-width: calc(25% - 30px);
+    padding-top: 10px !important;
+}
+
+.react-calendar__year-view__months,
+.react-calendar__century-view__decades,
+.react-calendar__decade-view__years {
+    /* row-gap: 30px;
+    column-gap: 30px; */
+    justify-content: center;
+}
+
+.react-calendar__tile--range,
+.react-calendar__tile--hasActive {
+    background-color: #A64AC9 !important;
+}
+
+.react-calendar__tile--range abbr,
+.react-calendar__tile--hasActive {
+    color: #fff !important;
+}
+
+.react-calendar__tile--rangeStart abbr::after {
+    content: 'RENTING START';
+    font-size: 26px;
+    display: inline-block;
+    line-height: 29px;
+}
+
+.react-calendar__tile--rangeEnd abbr::after {
+    content: 'RENTING END';
+    font-size: 26px;
+    display: inline-block;
+    line-height: 29px;
+}
+
+.react-calendar__tile--rangeStart.react-calendar__tile--rangeEnd abbr::after {
+    content: unset !important;
+}
+
+.react-calendar__tile.react-calendar__month-view__days__day:hover,
+.react-calendar__year-view__months .react-calendar__tile:hover,
+.react-calendar__decade-view__years .react-calendar__tile:hover,
+.react-calendar__century-view__decades .react-calendar__tile:hover {
+    background-color: #A64AC9 !important;
+    color: #fff;
+}
+
+.react-calendar__tile.react-calendar__month-view__days__day abbr,
+.react-calendar__tile abbr {
+    font-family: 'Poppins', sans-serif;
+}
+
+.react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day--neighboringMonth {
+    background-color: #B5B5B5;
+    opacity: 46%;
+    font-size: 0;
+}
+
+.react-calendar__month-view__weekdays__weekday abbr {
+    font-family: 'Poppins', sans-serif;
+    font-size: 34px;
+    line-height: 37px;
+    font-weight: 700;
+    color: #A64AC9;
+    text-decoration: none;
+}
+
+.react-calendar__navigation__label:hover,
+.react-calendar__navigation__label__labelText.react-calendar__navigation__label__labelText--from,
+.react-calendar__navigation__label:focus {
+    background: transparent !important;
+}
+
+.react-calendar__navigation__label__labelText.react-calendar__navigation__label__labelText--from,
+.react-calendar__century-view__decades .react-calendar__tile,
+.react-calendar__decade-view__years .react-calendar__tile {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    line-height: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #A64AC9;
+}
+
+.react-calendar__century-view__decades .react-calendar__tile,
+.react-calendar__decade-view__years .react-calendar__tile {
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 calc(33.33% - 30px) !important;
+}
+
+.react-calendar__tile:disabled{
+    background-color: #B5B5B5 !important;
+    color: #fff !important;
+}
+.react-calendar__tile:disabled:hover{
+    background-color: #B5B5B5 !important;
+    color: #fff !important;
+}
+
+
+@media (max-width:1919.98px){
+    .react-calendar__month-view__days{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width:1199.98px) {
+    .react-calendar__month-view__days .react-calendar__tile,
+    .react-calendar__month-view__weekdays .react-calendar__tile,
+    .react-calendar__month-view__weekdays__weekday abbr,
+    .react-calendar__year-view__months .react-calendar__tile ,
+    .react-calendar__decade-view__years .react-calendar__tile{
+        font-size: 30px;
+        line-height: 34px;
+    }
+    .react-calendar__tile.react-calendar__month-view__days__day, .react-calendar__tile{
+        height: 100px;
+        max-width: calc(14.28% - 10px);
+    }
+    .react-calendar__month-view__days{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .react-calendar__tile--rangeStart abbr::after,
+    .react-calendar__tile--rangeEnd abbr::after{
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width:767.98px){
+    .react-calendar__month-view__days .react-calendar__tile,
+    .react-calendar__month-view__weekdays .react-calendar__tile,
+    .react-calendar__month-view__weekdays__weekday abbr,
+    .react-calendar__decade-view__years .react-calendar__tile {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .react-calendar__year-view__months .react-calendar__tile{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .react-calendar__tile.react-calendar__month-view__days__day, .react-calendar__tile{
+        height: 80px;
+        max-width: calc(14.28% - 5px);
+    }
+    .react-calendar__tile--rangeStart abbr::after,
+    .react-calendar__tile--rangeEnd abbr::after{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .react-calendar__month-view__days{
+        padding-left: 10px;
+        padding-right: 10px;
+        row-gap: 5px;
+    }
+}
+@media (max-width: 576px){
+    .react-calendar__month-view__weekdays{
+        padding: 10px 0;
+    }
+    .react-calendar__navigation__label__labelText.react-calendar__navigation__label__labelText--from{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .react-calendar__tile.react-calendar__month-view__days__day, .react-calendar__tile{
+        height: 60px;
+        max-width: calc(14.28% - 5px);
+    }
+    .react-calendar__month-view__days .react-calendar__tile,
+    .react-calendar__month-view__weekdays .react-calendar__tile,
+    .react-calendar__month-view__weekdays__weekday abbr,
+    .react-calendar__decade-view__years .react-calendar__tile {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .react-calendar__tile--rangeStart abbr::after{
+        content: 'START' !important;
+        display: block;
+        font-size: 10px;
+    }
+    .react-calendar__tile--rangeEnd abbr::after{
+        content: 'END' !important;
+        display: block;
+        font-size: 10px;
+    }
+    
+}

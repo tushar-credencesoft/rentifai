@@ -1,0 +1,74 @@
+.sidebar li img {
+    transition: all .3s ease-in-out;
+    width: 30px;
+}
+.sidebar li.active{
+    color: #A64AC9;
+}
+.sidebar li.active .gray-img{
+    display: none;
+}
+.sidebar li.active .color-img{
+    display: block;
+}
+.sidebar li:hover a {
+    color: #A64AC9;
+}
+.sidebar li:hover .gray-img,
+.log-out:hover .gray-img {
+    display: none;
+}
+.sidebar li:hover .color-img,
+.log-out:hover .color-img {
+    display: block !important;
+}
+.dashboard-list .mobile-menu.dropdown{
+    display: block;
+}
+.dashboard-list .mobile-menu{
+    display: none !important;
+}
+.dashboard-list .mobile-menu.open {
+    position: absolute;
+    background-color: #fff;
+    max-width: 386px;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+@media (max-width:1919px){
+    .dashboard-list .user-profile {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media (min-width: 1919.98px) {
+    .left-sidebar{
+        width: 20.1% !important;
+    }
+    .right-sidebar{
+        width: 79.9% !important;
+    }
+}
+@media (min-width:1535px) {
+    .income-box{
+        padding-left: 20px;
+    }
+}
+@media (max-width:1023.98px) {
+    .dashboard-list .mobile-menu.dropdown{
+        display: none;
+    }
+    .dashboard-list .mobile-menu.dropdown.open {
+        display: block !important;
+    }
+}
+@media (max-width:640px) {
+    .dashboard-list .mobile-menu.open {
+        max-width: 100%;
+    }
+}

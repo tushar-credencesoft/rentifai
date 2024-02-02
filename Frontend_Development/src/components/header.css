@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: unset !important;
+}
+header .menu li.active::before {
+  background-color: #A64AC9;
+}
+header .menu li::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 7px;
+  width: 100%;
+  transition: all .3s ease-in-out;
+  border-radius: 6px;
+}
+header .menu li:hover::before {
+  background-color: #A64AC9;
+}
+header .menu li.active a {
+  color: #A64AC9;
+  font-weight: 700;
+}
+.container {
+  max-width: 2060px !important;
+}
+@media (max-width:1280px) {
+  .mobile-menu.dropdown.open {
+    display: block;
+  }
+}
+@media (max-width:1535px) {
+  .list-a-car .mobile-menu.dropdown.open {
+    display: block;
+  }
+}
+.font-Bebas {
+  font-family: 'Bebas Neue', sans-serif;
+}
+.custom-hamburger.open .bi-list ,
+.logged-in .log-out,
+.sign-in{
+  display: none !important;
+}
+.custom-hamburger.open .close,
+.logged-in .sign-in {
+  display: block !important;
+}
+.p-btn:hover svg path{
+  fill: #A64AC9;
+}
+

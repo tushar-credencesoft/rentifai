@@ -1,0 +1,5 @@
+/* Your CSS code or separate stylesheet */
+.text-box-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+  display: inline-block;
+}

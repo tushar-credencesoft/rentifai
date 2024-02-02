@@ -1,0 +1,57 @@
+span.MuiSlider-root {
+    color: #08648B;
+  }
+  
+  span.MuiSlider-thumb input+span.MuiSlider-valueLabelOpen {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%) !important;
+    width: 143px;
+    height: 44px;
+    border-radius: 23px;
+    background-color: #fff;
+    border: 1px solid #707070;
+    color: #707070;
+    font-size: 20px;
+    font-family: Poppins, sans-serif;
+  }
+  @media (max-width:767.98px){
+    span.MuiSlider-thumb input+span.MuiSlider-valueLabelOpen.MuiSlider-valueLabelOpen{
+      width: 80px;
+      font-size: 14px;
+    }
+  }
+  span.MuiSlider-thumb input+span.MuiSlider-valueLabelOpen::before,
+  span.MuiSlider-thumb::after,
+  span.MuiSlider-thumb::before{
+    content: unset !important;
+  }
+  
+  span.MuiSlider-thumb:hover, span.MuiSlider-thumb.Mui-focusVisible{
+    box-shadow: unset !important;
+  }
+  
+  .MuiSlider-valueLabelLabel::after{
+    content: ' Days';
+  }
+  input[aria-valuenow='1'] + span .MuiSlider-valueLabelLabel::after{
+    content: ' Day' !important;
+  }
+  input[aria-valuenow='1'] + span.MuiSlider-valueLabelOpen.MuiSlider-valueLabel {
+    left: 0;
+  }
+  input[aria-valuenow='30'] + span.MuiSlider-valueLabelOpen.MuiSlider-valueLabel {
+    right: 0;
+  }
+  
+  span.MuiSlider-thumb.Mui-active{
+    box-shadow: unset !important;
+  }
+
+
+
+  @media (max-width:1280px) {
+    .css-gj5qc8{
+      max-width: 100% !important;
+    }
+  }
